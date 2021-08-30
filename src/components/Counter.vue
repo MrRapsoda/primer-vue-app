@@ -1,6 +1,6 @@
 <template>
   <h2>{{ customTitle }}</h2>
-  <p>{{ start }} <sup>2</sup> = {{ squareCounter }}</p>
+  <p>{{ counter }} <sup>2</sup> = {{ squareCounter }}</p>
   <div>
       <button @click=" incrementCounter ">+1</button>
       <button @click=" decrementCounter ">-1</button>
@@ -21,7 +21,7 @@ export default {
     },
     data() { 
         return {
-            counter: 20
+            counter: this.start
         }
     },
     computed: {
